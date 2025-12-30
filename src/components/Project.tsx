@@ -1,6 +1,7 @@
 import React from "react";
 import pip from "../assets/images/Linkdin.png";
 import fitfound from "../assets/images/fitfound.webp";
+import parksmart from "../assets/images/parksmartDemo.png";
 import "../assets/styles/Project.scss";
 
 function Project() {
@@ -68,6 +69,42 @@ function Project() {
             instead the other way around. It allows employers to find candidates
             using AI candidate matching and verified employment history and
             candidates will be provided insights on their profile.
+          </p>
+        </div>
+        <div className="project">
+          <a
+            href="https://parksmart-sable.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              backgroundColor: "white",
+              borderRadius: "8px",
+            }}
+          >
+            <img
+              src={parksmart}
+              className="zoom"
+              alt="thumbnail"
+              width="100%"
+              style={{
+                backgroundColor: "white",
+                borderRadius: "8px",
+              }}
+            />
+          </a>
+          <a
+            href="https://parksmart-sable.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h2>ParkSmart</h2>
+          </a>
+          <p>
+            ParkSmart is a smart parking solution that helps users find,
+            reserve, and navigate to available parking spots effortlessly.
+            Owners can list their spaces to earn money, creating opportunities
+            for employment while making city parking more efficient and
+            stress-free.
           </p>
         </div>
       </div>
