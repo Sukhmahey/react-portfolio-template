@@ -21,6 +21,7 @@ function Contact() {
     "success"
   );
 
+  const public_key = process.env.REACT_APP_EMAIL_API;
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent) => {
@@ -37,14 +38,8 @@ function Contact() {
         message: message,
       };
 
-      console.log(templateParams);
       emailjs
-        .send(
-          "service_v7zc2xu",
-          "template_sfebfzc",
-          templateParams,
-          "T-Q7H5CTdq0ATyG7s"
-        )
+        .send("service_v7zc2xu", "template_sfebfzc", templateParams, public_key)
         .then(
           (response) => {
             console.log("SUCCESS!", response.status, response.text);
@@ -78,8 +73,6 @@ function Contact() {
     }
     setSnackbarOpen(false);
   };
-
-  console.log(name, email, message);
 
   return (
     <div id="contact">
