@@ -1,5 +1,6 @@
 import React from "react";
 import pip from "../assets/images/Linkdin.png";
+import fitfound from "../assets/images/fitfound.webp";
 import "../assets/styles/Project.scss";
 
 function Project() {
@@ -31,6 +32,42 @@ function Project() {
             and non-verbal com- munication. With a progressive, level-based
             system, PIP supports users as they build confidence step by step,
             making social situations easier and more manageable in daily life.
+          </p>
+        </div>
+        <div className="project">
+          <a
+            href="https://fit-found.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              backgroundColor: "#B3D0ED",
+              borderRadius: "8px",
+            }}
+          >
+            <img
+              src={fitfound}
+              className="zoom"
+              alt="thumbnail"
+              width="100%"
+              style={{
+                backgroundColor: "#B3D0ED",
+                borderRadius: "8px",
+              }}
+            />
+          </a>
+          <a
+            href="https://fit-found.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h2>FitFound</h2>
+          </a>
+          <p>
+            Fitfound is a job-matching web application which is designed to flip
+            the traditional hiring model allowing employers to find candidates
+            instead the other way around. It allows employers to find candidates
+            using AI candidate matching and verified employment history and
+            candidates will be provided insights on their profile.
           </p>
         </div>
       </div>
