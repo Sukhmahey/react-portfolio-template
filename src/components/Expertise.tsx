@@ -1,11 +1,7 @@
 import React from "react";
 import "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faReact,
-  faDocker,
-  faPython,
-} from "@fortawesome/free-brands-svg-icons";
+import { faReact, faApple } from "@fortawesome/free-brands-svg-icons";
 import Chip from "@mui/material/Chip";
 import "../assets/styles/Expertise.scss";
 
@@ -71,7 +67,7 @@ function Expertise() {
           </div>
 
           <div className="skill">
-            <FontAwesomeIcon icon={faDocker} size="3x" />
+            <FontAwesomeIcon icon={faApple} size="3x" />
             <h3>Mobile App Development</h3>
             <p>
               I have developed cross-platform mobile applications using React
