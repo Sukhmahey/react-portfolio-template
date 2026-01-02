@@ -2,6 +2,7 @@ import React from "react";
 import pip from "../assets/images/Linkdin.png";
 import fitfound from "../assets/images/fitfound.webp";
 import parksmart from "../assets/images/parksmartDemo.png";
+import tiffinHub from "../assets/gifs/tiffinHub.mp4";
 import "../assets/styles/Project.scss";
 
 function Project() {
@@ -33,6 +34,46 @@ function Project() {
             and non-verbal com- munication. With a progressive, level-based
             system, PIP supports users as they build confidence step by step,
             making social situations easier and more manageable in daily life.
+          </p>
+        </div>
+        <div className="project">
+          <a
+            href="https://tiffin-service-template.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              borderRadius: "8px",
+              display: "block",
+              overflow: "hidden",
+            }}
+          >
+            <video
+              src={tiffinHub}
+              className="zoom"
+              autoPlay
+              loop
+              muted
+              playsInline
+              style={{
+                width: "100%",
+                borderRadius: "8px",
+                display: "block",
+              }}
+            />
+          </a>
+          <a
+            href="https://tiffin-service-template.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h2>Tiffin Hub</h2>
+          </a>
+          <p>
+            Tiffin Hub is a template website I created for my friend's tiffin
+            service company. It provides a modern and user-friendly platform for
+            showcasing their tiffin service offerings, making it easy for
+            customers to browse menus, place orders, and learn about the
+            service.
           </p>
         </div>
         <div className="project">
